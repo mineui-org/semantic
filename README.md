@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.0.2-black"/>
+    <img src="https://img.shields.io/badge/v-0.0.3-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
     <img src="https://img.shields.io/github/issues/mineui-org/semantic?style=flat" alt="Github Repo Issues" />
@@ -95,146 +95,137 @@
 
 - ## Documentation 📑
 
-
     - ### API ⛓️
 
-        - #### Background Colors
-            > Semantic background values that adapt to theme.
+        - #### Root Variables
 
-            ```css
-            --bg-page         /* Page background */
-            --bg-surface      /* Surface background (cards, panels) */
-            --bg-raised       /* Elevated surfaces */
-            --bg-overlay      /* Modal/dropdown overlays */
-            --bg-code         /* Code blocks */
-            ```
+            | Variable             | Light            | Dark             | Description              |
+            | -------------------- | ---------------- | ---------------- | ------------------------ |
+            | `--dir`              | `ltr`            | `ltr`            | Text direction           |
+            | `--start`            | `left`           | `left`           | Start side (directional) |
+            | `--end`              | `right`          | `right`          | End side (directional)   |
+            | `--unit`             | `0.25rem`        | `0.25rem`        | Base spacing unit        |
+            | `--font-base`        | Sans             | Sans             | Default font family      |
+            | `--font-heading`     | Sans             | Sans             | Heading font family      |
+            | `--font-mono`        | Mono             | Mono             | Monospace font family    |
+            | `--font-size-base`   | `1rem`           | `1rem`           | Base font size           |
+            | `--line-height-base` | `1.5`            | `1.5`            | Base line height         |
+            | `--transition-fast`  | `150ms ease-out` | `150ms ease-out` | Fast transition          |
+            | `--transition-base`  | `300ms ease-out` | `300ms ease-out` | Standard transition      |
+            | `--transition-slow`  | `500ms ease-out` | `500ms ease-out` | Slow transition          |
+            | `--radius`           | `0.5rem`         | `0.5rem`         | Base border radius       |
+
+        - #### Background Colors
+
+            | Variable       | Light   | Dark    | Purpose                            |
+            | -------------- | ------- | ------- | ---------------------------------- |
+            | `--bg-page`    | Gray 0  | Gray 11 | Page background                    |
+            | `--bg-surface` | Gray 0  | Gray 10 | Surface background (cards, panels) |
+            | `--bg-raised`  | Gray 1  | Gray 9  | Elevated surfaces                  |
+            | `--bg-overlay` | HSL 10% | HSL 0%  | Modal/dropdown overlays            |
+            | `--bg-code`    | Gray 1  | Gray 9  | Code blocks                        |
 
         - #### Text Colors
 
-            > Hierarchical text colors.
-
-            ```css
-            --text-1          /* Primary text */
-            --text-2          /* Secondary text */
-            --text-3          /* Tertiary text */
-            --text-4          /* Disabled text */
-            --text-inverse    /* Inverse text (on dark backgrounds) */
-            --text-link       /* Link color */
-            --text-link-hover /* Link hover color */
-            ```
+            | Variable            | Light   | Dark    | Hierarchy                     |
+            | ------------------- | ------- | ------- | ----------------------------- |
+            | `--text-1`          | Gray 11 | Gray 0  | Primary text                  |
+            | `--text-2`          | Gray 8  | Gray 3  | Secondary text                |
+            | `--text-3`          | Gray 6  | Gray 5  | Tertiary text                 |
+            | `--text-4`          | Gray 5  | Gray 6  | Disabled text                 |
+            | `--text-inverse`    | Gray 0  | Gray 11 | Inverse (on dark backgrounds) |
+            | `--text-link`       | Blue 6  | Blue 4  | Link color                    |
+            | `--text-link-hover` | Blue 7  | Blue 3  | Link hover state              |
 
         - #### Border Colors
 
-            > Border colors for different contexts.
-
-            ```css
-            --border-1        /* Primary borders */
-            --border-2        /* Secondary borders */
-            --border-3        /* Subtle borders */
-            --border-focus    /* Focus ring color */
-            ```
+            | Variable         | Light  | Dark   | Context           |
+            | ---------------- | ------ | ------ | ----------------- |
+            | `--border-1`     | Gray 3 | Gray 8 | Primary borders   |
+            | `--border-2`     | Gray 4 | Gray 7 | Secondary borders |
+            | `--border-3`     | Gray 5 | Gray 6 | Subtle borders    |
+            | `--border-focus` | Blue 6 | Blue 5 | Focus ring color  |
 
         - #### Brand Colors
 
-            > Primary brand color with states.
-
-            ```css
-            --brand           /* Base brand color */
-            --brand-hover     /* Hover state */
-            --brand-active    /* Active state */
-            --brand-subtle    /* Subtle background */
-            --brand-text      /* Brand text color */
-            ```
+            | Variable         | Light  | Dark    | State             |
+            | ---------------- | ------ | ------- | ----------------- |
+            | `--brand`        | Blue 6 | Blue 5  | Base brand color  |
+            | `--brand-hover`  | Blue 7 | Blue 4  | Hover state       |
+            | `--brand-active` | Blue 8 | Blue 3  | Active state      |
+            | `--brand-subtle` | Blue 1 | Blue 11 | Subtle background |
+            | `--brand-text`   | Blue 6 | Blue 4  | Brand text color  |
 
         - #### Status Colors
 
-            > Success, warning, error, info with states.
+            | Variable           | Light   | Dark     | Semantic          |
+            | ------------------ | ------- | -------- | ----------------- |
+            | `--success`        | Green 6 | Green 5  | Success color     |
+            | `--success-hover`  | Green 7 | Green 4  | Success hover     |
+            | `--success-active` | Green 8 | Green 3  | Success active    |
+            | `--success-subtle` | Green 1 | Green 11 | Success subtle bg |
+            | `--success-text`   | Green 7 | Green 4  | Success text      |
+            | `--warning`        | Amber 6 | Amber 5  | Warning color     |
+            | `--warning-hover`  | Amber 7 | Amber 4  | Warning hover     |
+            | `--warning-active` | Amber 8 | Amber 3  | Warning active    |
+            | `--warning-subtle` | Amber 1 | Amber 11 | Warning subtle bg |
+            | `--warning-text`   | Amber 8 | Amber 4  | Warning text      |
+            | `--error`          | Red 6   | Red 5    | Error color       |
+            | `--error-hover`    | Red 7   | Red 4    | Error hover       |
+            | `--error-active`   | Red 8   | Red 3    | Error active      |
+            | `--error-subtle`   | Red 1   | Red 11   | Error subtle bg   |
+            | `--error-text`     | Red 7   | Red 4    | Error text        |
+            | `--info`           | Cyan 6  | Cyan 5   | Info color        |
+            | `--info-hover`     | Cyan 7  | Cyan 4   | Info hover        |
+            | `--info-active`    | Cyan 8  | Cyan 3   | Info active       |
+            | `--info-subtle`    | Cyan 1  | Cyan 11  | Info subtle bg    |
+            | `--info-text`      | Cyan 7  | Cyan 4   | Info text         |
 
-            ```css
-            /* Success */
-            --success,
-            --success-hover,  --success-active,
-            --success-subtle, --success-text
+        - #### Shadow Scales
 
-            /* Warning */
-            --warning,
-            --warning-hover,  --warning-active,
-            --warning-subtle, --warning-text
+            | Variable      | Light       | Dark               | Use Case            |
+            | ------------- | ----------- | ------------------ | ------------------- |
+            | `--shadow-xs` | Extra small | Extra small (dark) | Subtle elevation    |
+            | `--shadow-sm` | Small       | Small (dark)       | Light elevation     |
+            | `--shadow-md` | Medium      | Medium (dark)      | Standard elevation  |
+            | `--shadow-lg` | Large       | Large (dark)       | Prominent elevation |
+            | `--shadow-xl` | Extra large | Extra large (dark) | Maximum elevation   |
 
-            /* Error */
-            --error,
-            --error-hover,  --error-active,
-            --error-subtle, --error-text
+        - #### State Opacity
 
-            /* Info */
-            --info,
-            --info-hover,  --info-active,
-            --info-subtle, --info-text
-            ```
+            | Variable             | Light | Dark  | Purpose                |
+            | -------------------- | ----- | ----- | ---------------------- |
+            | `--hover-opacity`    | `10%` | `20%` | Hover state opacity    |
+            | `--active-opacity`   | `20%` | `30%` | Active state opacity   |
+            | `--disabled-opacity` | `40%` | `50%` | Disabled state opacity |
 
-        - #### Shadows
+        - #### Input Variables
 
-            > Theme-aware shadows.
+            | Variable              | Light   | Dark    | Context          |
+            | --------------------- | ------- | ------- | ---------------- |
+            | `--input-bg`          | Gray 0  | Gray 10 | Input background |
+            | `--input-border`      | Gray 3  | Gray 8  | Input border     |
+            | `--input-text`        | Gray 11 | Gray 0  | Input text       |
+            | `--input-placeholder` | Gray 5  | Gray 6  | Placeholder text |
 
-            ```css
-            --shadow-xs, --shadow-sm, --shadow-md,
-            --shadow-lg, --shadow-xl
-            ```
+        - #### SCSS Mixins
 
-        - #### Component Tokens
+            | Mixin        | Signature                                  | Description                   |
+            | ------------ | ------------------------------------------ | ----------------------------- |
+            | `theme`      | `@include theme($property, $light, $dark)` | Apply theme-aware values      |
+            | `rtl`        | `@include rtl { }`                         | RTL-specific styles           |
+            | `ltr`        | `@include ltr { }`                         | LTR-specific styles           |
+            | `focus-ring` | `@include focus-ring`                      | Standard focus indicator      |
+            | `hover`      | `@include hover { }`                       | Hover state (auto transition) |
+            | `active`     | `@include active { }`                      | Active state styles           |
+            | `disabled`   | `@include disabled { }`                    | Disabled state styles         |
 
-            > Pre-configured values for common components.
+        - #### SCSS Functions
 
-            ```css
-            /* Button */
-            --btn-h-sm,  --btn-h-md,  --btn-h-lg
-            --btn-px-sm, --btn-px-md, --btn-px-lg
-
-            /* Input */
-            --input-h-sm,  --input-h-md,  --input-h-lg
-            --input-px-sm, --input-px-md, --input-px-lg
-
-            /* Card */
-            --card-padding,  --card-radius, --card-shadow
-
-            /* Modal */
-            --modal-padding, --modal-radius, --modal-shadow
-
-            /* And more... */
-            ```
-
-        - #### Mixins
-
-            > Helpful SCSS mixins.
-
-            ```scss
-            // Theme-aware property
-            @include theme(background, $light-val, $dark-val);
-
-            // RTL support
-            @include rtl { /* RTL styles */ }
-            @include ltr { /* LTR styles */ }
-
-            // Focus ring
-            @include focus-ring;
-
-            // States
-            @include hover { /* hover styles */ }
-            @include active { /* active styles */ }
-            @include disabled { /* disabled styles */ }
-            ```
-
-        - #### Functions
-
-            > Helper functions.
-
-            ```scss
-            // Get semantic color
-            background: color(brand);
-
-            // Calculate spacing
-            padding: space(4);  // 1rem
-            ```
+            | Function  | Example        | Returns                 |
+            | --------- | -------------- | ----------------------- |
+            | `color()` | `color(brand)` | `var(--brand)`          |
+            | `space()` | `space(4)`     | `calc(var(--unit) * 4)` |
 
         <div align="center"> <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/> </div>
         <br>

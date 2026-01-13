@@ -1,6 +1,6 @@
 {
 	"name"                             : "@mineui/semantics",
-	"version"                          : "0.0.2",
+	"version"                          : "0.0.3",
 	"description"                      : "Semantic variables for theming",
 	"keywords"                         : ["mine", "ui", "semantics"],
 	"license"                          : "MIT",
