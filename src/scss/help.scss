@@ -1,0 +1,19 @@
+// help.scss
+//
+// Made with ❤️ by Maysara.
+
+
+
+
+// ----------------------------------------------------------------------------
+// HELPER FUNCTIONS (SCSS)
+// ----------------------------------------------------------------------------
+    // Get semantic color
+    @function color($name) {
+        @return var(--#{$name});
+    }
+
+    // Get spacing
+    @function space($value) {
+        @return calc(var(--unit) * #{$value});
+    }

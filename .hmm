@@ -1,0 +1,23 @@
+{
+	"type"              : "lib",
+	"template"          : "clean",
+	"pm"                : "bun",
+	"repo": {
+		"org"           : "mineui",
+		"name"          : "tokens",
+		"version"       : "0.0.1",
+		"desc"          : "350+ design tokens for modern UI systems—colors, spacing, typography, shadows, and more in HSL format",
+		"kw"            : ["mine", "ui", "tokens"],
+		"license"       : "MIT",
+		"issues"        : "https://github.com/mineui-org/semantics/issues",
+		"homepage"      : "https://github.com/mineui-org/semantics#readme",
+		"git_url"       : "git+https://github.com/mineui-org/semantics.git"
+	},
+	"author": {
+		"id"            : "maysara-elshewehy",
+		"name"          : "Maysara",
+		"email"         : "maysara.elshewehy@gmail.com",
+		"url"           : "https://github.com/maysara-elshewehy"
+	},
+	"createdAt"         : "2026-01-08T03:01:58.268Z"
+}

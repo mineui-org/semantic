@@ -1,0 +1,68 @@
+// mixins.scss
+//
+// Made with ❤️ by Maysara.
+
+
+
+
+// ----------------------------------------------------------------------------
+// MIXINS
+// ----------------------------------------------------------------------------
+    // Theme-aware color
+    @mixin theme($property, $light, $dark) {
+        #{$property}: $light;
+
+        [data-theme="dark"] & {
+            #{$property}: $dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme]) & {
+                #{$property}: $dark;
+            }
+        }
+    }
+
+    // RTL Support
+    @mixin rtl {
+        [dir="rtl"] & {
+            @content;
+        }
+    }
+
+    @mixin ltr {
+        [dir="ltr"] & {
+            @content;
+        }
+    }
+
+    // Focus Ring
+    @mixin focus-ring {
+        outline: 2px solid var(--border-focus);
+        outline-offset: 2px;
+    }
+
+    // Hover State
+    @mixin hover {
+        transition: var(--transition-fast);
+
+        &:hover:not(:disabled) {
+            @content;
+        }
+    }
+
+    // Active State
+    @mixin active {
+        &:active:not(:disabled) {
+            @content;
+        }
+    }
+
+    // Disabled State
+    @mixin disabled {
+        &:disabled {
+            opacity: var(--disabled-opacity);
+            cursor: not-allowed;
+            @content;
+        }
+    }
