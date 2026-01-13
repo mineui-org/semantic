@@ -1,8 +1,8 @@
 {
 	"name"                             : "@mineui/semantics",
-	"version"                          : "0.0.1",
-	"description"                      : "350+ design tokens for modern UI systems—colors, spacing, typography, shadows, and more in HSL format",
-	"keywords"                         : ["mine", "ui", "tokens"],
+	"version"                          : "0.0.2",
+	"description"                      : "Semantic variables for theming",
+	"keywords"                         : ["mine", "ui", "semantics"],
 	"license"                          : "MIT",
 	"homepage"                         : "https://github.com/mineui-org/semantics#readme",
 	"bugs": {

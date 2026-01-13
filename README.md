@@ -8,11 +8,11 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.0.1-black"/>
+    <img src="https://img.shields.io/badge/v-0.0.2-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
-    <img src="https://img.shields.io/github/issues/mineui-orgz/semantic?style=flat" alt="Github Repo Issues" />
-    <img src="https://img.shields.io/github/stars/mineui-orgz/semantic?style=social" alt="GitHub Repo stars" />
+    <img src="https://img.shields.io/github/issues/mineui-org/semantic?style=flat" alt="Github Repo Issues" />
+    <img src="https://img.shields.io/github/stars/mineui-org/semantic?style=social" alt="GitHub Repo stars" />
 </div>
 <br>
 
