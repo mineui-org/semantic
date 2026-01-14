@@ -4,6 +4,7 @@
 
 
 
+
 // ----------------------------------------------------------------------------
 // ROOT - Base Configuration
 // ----------------------------------------------------------------------------
@@ -17,19 +18,19 @@
         --unit: 0.25rem;
 
         // Typography Base
-        --font-base: #{$font-sans};
-        --font-heading: #{$font-sans};
-        --font-mono: #{$font-mono};
-        --font-size-base: #{$fs-base};
-        --line-height-base: #{$lh-normal};
+        --font-base: tokens.$font-sans;
+        --font-heading: tokens.$font-sans;
+        --font-mono: tokens.$font-mono;
+        --font-size-base: tokens.$fs-base;
+        --line-height-base: tokens.$lh-normal;
 
         // Transitions
-        --transition-fast: #{$dur-fast} #{$ease-out};
-        --transition-base: #{$dur-normal} #{$ease-out};
-        --transition-slow: #{$dur-slow} #{$ease-out};
+        --transition-fast: tokens.$dur-fast tokens.$ease-out;
+        --transition-base: tokens.$dur-normal tokens.$ease-out;
+        --transition-slow: tokens.$dur-slow tokens.$ease-out;
 
         // Border Radius Base
-        --radius: #{$br-md};
+        --radius: tokens.$br-md;
     }
 
 // ----------------------------------------------------------------------------
@@ -40,79 +41,79 @@
         color-scheme: light;
 
         // Background
-        --bg-page: #{$gray-0};
-        --bg-surface: #{$gray-0};
-        --bg-raised: #{$gray-1};
+        --bg-page: tokens.$gray-0;
+        --bg-surface: tokens.$gray-0;
+        --bg-raised: tokens.$gray-1;
         --bg-overlay: hsl(0, 0%, 10%, 0.5);
-        --bg-code: #{$gray-1};
+        --bg-code: tokens.$gray-1;
 
         // Text
-        --text-1: #{$gray-11};
-        --text-2: #{$gray-8};
-        --text-3: #{$gray-6};
-        --text-4: #{$gray-5};
-        --text-inverse: #{$gray-0};
-        --text-link: #{$blue-6};
-        --text-link-hover: #{$blue-7};
+        --text-1: tokens.$gray-11;
+        --text-2: tokens.$gray-8;
+        --text-3: tokens.$gray-6;
+        --text-4: tokens.$gray-5;
+        --text-inverse: tokens.$gray-0;
+        --text-link: tokens.$blue-6;
+        --text-link-hover: tokens.$blue-7;
 
         // Border
-        --border-1: #{$gray-3};
-        --border-2: #{$gray-4};
-        --border-3: #{$gray-5};
-        --border-focus: #{$blue-6};
+        --border-1: tokens.$gray-3;
+        --border-2: tokens.$gray-4;
+        --border-3: tokens.$gray-5;
+        --border-focus: tokens.$blue-6;
 
         // Brand
-        --brand: #{$blue-6};
-        --brand-hover: #{$blue-7};
-        --brand-active: #{$blue-8};
-        --brand-subtle: #{$blue-1};
-        --brand-text: #{$blue-6};
+        --brand: tokens.$blue-6;
+        --brand-hover: tokens.$blue-7;
+        --brand-active: tokens.$blue-8;
+        --brand-subtle: tokens.$blue-1;
+        --brand-text: tokens.$blue-6;
 
         // Success
-        --success: #{$green-6};
-        --success-hover: #{$green-7};
-        --success-active: #{$green-8};
-        --success-subtle: #{$green-1};
-        --success-text: #{$green-7};
+        --success: tokens.$green-6;
+        --success-hover: tokens.$green-7;
+        --success-active: tokens.$green-8;
+        --success-subtle: tokens.$green-1;
+        --success-text: tokens.$green-7;
 
         // Warning
-        --warning: #{$amber-6};
-        --warning-hover: #{$amber-7};
-        --warning-active: #{$amber-8};
-        --warning-subtle: #{$amber-1};
-        --warning-text: #{$amber-8};
+        --warning: tokens.$amber-6;
+        --warning-hover: tokens.$amber-7;
+        --warning-active: tokens.$amber-8;
+        --warning-subtle: tokens.$amber-1;
+        --warning-text: tokens.$amber-8;
 
         // Error
-        --error: #{$red-6};
-        --error-hover: #{$red-7};
-        --error-active: #{$red-8};
-        --error-subtle: #{$red-1};
-        --error-text: #{$red-7};
+        --error: tokens.$red-6;
+        --error-hover: tokens.$red-7;
+        --error-active: tokens.$red-8;
+        --error-subtle: tokens.$red-1;
+        --error-text: tokens.$red-7;
 
         // Info
-        --info: #{$cyan-6};
-        --info-hover: #{$cyan-7};
-        --info-active: #{$cyan-8};
-        --info-subtle: #{$cyan-1};
-        --info-text: #{$cyan-7};
+        --info: tokens.$cyan-6;
+        --info-hover: tokens.$cyan-7;
+        --info-active: tokens.$cyan-8;
+        --info-subtle: tokens.$cyan-1;
+        --info-text: tokens.$cyan-7;
 
         // Shadows
-        --shadow-xs: #{$shadow-xs};
-        --shadow-sm: #{$shadow-sm};
-        --shadow-md: #{$shadow-md};
-        --shadow-lg: #{$shadow-lg};
-        --shadow-xl: #{$shadow-xl};
+        --shadow-xs: tokens.$shadow-xs;
+        --shadow-sm: tokens.$shadow-sm;
+        --shadow-md: tokens.$shadow-md;
+        --shadow-lg: tokens.$shadow-lg;
+        --shadow-xl: tokens.$shadow-xl;
 
         // States
-        --hover-opacity: #{$opacity-10};
-        --active-opacity: #{$opacity-20};
-        --disabled-opacity: #{$opacity-40};
+        --hover-opacity: tokens.$opacity-10;
+        --active-opacity: tokens.$opacity-20;
+        --disabled-opacity: tokens.$opacity-40;
 
         // Input
-        --input-bg: #{$gray-0};
-        --input-border: #{$gray-3};
-        --input-text: #{$gray-11};
-        --input-placeholder: #{$gray-5};
+        --input-bg: tokens.$gray-0;
+        --input-border: tokens.$gray-3;
+        --input-text: tokens.$gray-11;
+        --input-placeholder: tokens.$gray-5;
     }
 
 // ----------------------------------------------------------------------------
@@ -122,79 +123,79 @@
         color-scheme: dark;
 
         // Background
-        --bg-page: #{$gray-11};
-        --bg-surface: #{$gray-10};
-        --bg-raised: #{$gray-9};
+        --bg-page: tokens.$gray-11;
+        --bg-surface: tokens.$gray-10;
+        --bg-raised: tokens.$gray-9;
         --bg-overlay: hsl(0, 0%, 0%, 0.7);
-        --bg-code: #{$gray-9};
+        --bg-code: tokens.$gray-9;
 
         // Text
-        --text-1: #{$gray-0};
-        --text-2: #{$gray-3};
-        --text-3: #{$gray-5};
-        --text-4: #{$gray-6};
-        --text-inverse: #{$gray-11};
-        --text-link: #{$blue-4};
-        --text-link-hover: #{$blue-3};
+        --text-1: tokens.$gray-0;
+        --text-2: tokens.$gray-3;
+        --text-3: tokens.$gray-5;
+        --text-4: tokens.$gray-6;
+        --text-inverse: tokens.$gray-11;
+        --text-link: tokens.$blue-4;
+        --text-link-hover: tokens.$blue-3;
 
         // Border
-        --border-1: #{$gray-8};
-        --border-2: #{$gray-7};
-        --border-3: #{$gray-6};
-        --border-focus: #{$blue-5};
+        --border-1: tokens.$gray-8;
+        --border-2: tokens.$gray-7;
+        --border-3: tokens.$gray-6;
+        --border-focus: tokens.$blue-5;
 
         // Brand
-        --brand: #{$blue-5};
-        --brand-hover: #{$blue-4};
-        --brand-active: #{$blue-3};
-        --brand-subtle: #{$blue-11};
-        --brand-text: #{$blue-4};
+        --brand: tokens.$blue-5;
+        --brand-hover: tokens.$blue-4;
+        --brand-active: tokens.$blue-3;
+        --brand-subtle: tokens.$blue-11;
+        --brand-text: tokens.$blue-4;
 
         // Success
-        --success: #{$green-5};
-        --success-hover: #{$green-4};
-        --success-active: #{$green-3};
-        --success-subtle: #{$green-11};
-        --success-text: #{$green-4};
+        --success: tokens.$green-5;
+        --success-hover: tokens.$green-4;
+        --success-active: tokens.$green-3;
+        --success-subtle: tokens.$green-11;
+        --success-text: tokens.$green-4;
 
         // Warning
-        --warning: #{$amber-5};
-        --warning-hover: #{$amber-4};
-        --warning-active: #{$amber-3};
-        --warning-subtle: #{$amber-11};
-        --warning-text: #{$amber-4};
+        --warning: tokens.$amber-5;
+        --warning-hover: tokens.$amber-4;
+        --warning-active: tokens.$amber-3;
+        --warning-subtle: tokens.$amber-11;
+        --warning-text: tokens.$amber-4;
 
         // Error
-        --error: #{$red-5};
-        --error-hover: #{$red-4};
-        --error-active: #{$red-3};
-        --error-subtle: #{$red-11};
-        --error-text: #{$red-4};
+        --error: tokens.$red-5;
+        --error-hover: tokens.$red-4;
+        --error-active: tokens.$red-3;
+        --error-subtle: tokens.$red-11;
+        --error-text: tokens.$red-4;
 
         // Info
-        --info: #{$cyan-5};
-        --info-hover: #{$cyan-4};
-        --info-active: #{$cyan-3};
-        --info-subtle: #{$cyan-11};
-        --info-text: #{$cyan-4};
+        --info: tokens.$cyan-5;
+        --info-hover: tokens.$cyan-4;
+        --info-active: tokens.$cyan-3;
+        --info-subtle: tokens.$cyan-11;
+        --info-text: tokens.$cyan-4;
 
         // Shadows
-        --shadow-xs: #{$shadow-xs-dark};
-        --shadow-sm: #{$shadow-sm-dark};
-        --shadow-md: #{$shadow-md-dark};
-        --shadow-lg: #{$shadow-lg-dark};
-        --shadow-xl: #{$shadow-xl-dark};
+        --shadow-xs: tokens.$shadow-xs-dark;
+        --shadow-sm: tokens.$shadow-sm-dark;
+        --shadow-md: tokens.$shadow-md-dark;
+        --shadow-lg: tokens.$shadow-lg-dark;
+        --shadow-xl: tokens.$shadow-xl-dark;
 
         // States
-        --hover-opacity: #{$opacity-20};
-        --active-opacity: #{$opacity-30};
-        --disabled-opacity: #{$opacity-50};
+        --hover-opacity: tokens.$opacity-20;
+        --active-opacity: tokens.$opacity-30;
+        --disabled-opacity: tokens.$opacity-50;
 
         // Input
-        --input-bg: #{$gray-10};
-        --input-border: #{$gray-8};
-        --input-text: #{$gray-0};
-        --input-placeholder: #{$gray-6};
+        --input-bg: tokens.$gray-10;
+        --input-border: tokens.$gray-8;
+        --input-text: tokens.$gray-0;
+        --input-placeholder: tokens.$gray-6;
     }
 
 
@@ -205,69 +206,69 @@
         :root:not([data-theme]) {
             color-scheme: dark;
 
-            --bg-page: #{$gray-11};
-            --bg-surface: #{$gray-10};
-            --bg-raised: #{$gray-9};
+            --bg-page: tokens.$gray-11;
+            --bg-surface: tokens.$gray-10;
+            --bg-raised: tokens.$gray-9;
             --bg-overlay: hsl(0, 0%, 0%, 0.7);
-            --bg-code: #{$gray-9};
+            --bg-code: tokens.$gray-9;
 
-            --text-1: #{$gray-0};
-            --text-2: #{$gray-3};
-            --text-3: #{$gray-5};
-            --text-4: #{$gray-6};
-            --text-inverse: #{$gray-11};
-            --text-link: #{$blue-4};
-            --text-link-hover: #{$blue-3};
+            --text-1: tokens.$gray-0;
+            --text-2: tokens.$gray-3;
+            --text-3: tokens.$gray-5;
+            --text-4: tokens.$gray-6;
+            --text-inverse: tokens.$gray-11;
+            --text-link: tokens.$blue-4;
+            --text-link-hover: tokens.$blue-3;
 
-            --border-1: #{$gray-8};
-            --border-2: #{$gray-7};
-            --border-3: #{$gray-6};
-            --border-focus: #{$blue-5};
+            --border-1: tokens.$gray-8;
+            --border-2: tokens.$gray-7;
+            --border-3: tokens.$gray-6;
+            --border-focus: tokens.$blue-5;
 
-            --brand: #{$blue-5};
-            --brand-hover: #{$blue-4};
-            --brand-active: #{$blue-3};
-            --brand-subtle: #{$blue-11};
-            --brand-text: #{$blue-4};
+            --brand: tokens.$blue-5;
+            --brand-hover: tokens.$blue-4;
+            --brand-active: tokens.$blue-3;
+            --brand-subtle: tokens.$blue-11;
+            --brand-text: tokens.$blue-4;
 
-            --success: #{$green-5};
-            --success-hover: #{$green-4};
-            --success-active: #{$green-3};
-            --success-subtle: #{$green-11};
-            --success-text: #{$green-4};
+            --success: tokens.$green-5;
+            --success-hover: tokens.$green-4;
+            --success-active: tokens.$green-3;
+            --success-subtle: tokens.$green-11;
+            --success-text: tokens.$green-4;
 
-            --warning: #{$amber-5};
-            --warning-hover: #{$amber-4};
-            --warning-active: #{$amber-3};
-            --warning-subtle: #{$amber-11};
-            --warning-text: #{$amber-4};
+            --warning: tokens.$amber-5;
+            --warning-hover: tokens.$amber-4;
+            --warning-active: tokens.$amber-3;
+            --warning-subtle: tokens.$amber-11;
+            --warning-text: tokens.$amber-4;
 
-            --error: #{$red-5};
-            --error-hover: #{$red-4};
-            --error-active: #{$red-3};
-            --error-subtle: #{$red-11};
-            --error-text: #{$red-4};
+            --error: tokens.$red-5;
+            --error-hover: tokens.$red-4;
+            --error-active: tokens.$red-3;
+            --error-subtle: tokens.$red-11;
+            --error-text: tokens.$red-4;
 
-            --info: #{$cyan-5};
-            --info-hover: #{$cyan-4};
-            --info-active: #{$cyan-3};
-            --info-subtle: #{$cyan-11};
-            --info-text: #{$cyan-4};
+            --info: tokens.$cyan-5;
+            --info-hover: tokens.$cyan-4;
+            --info-active: tokens.$cyan-3;
+            --info-subtle: tokens.$cyan-11;
+            --info-text: tokens.$cyan-4;
 
-            --shadow-xs: #{$shadow-xs-dark};
-            --shadow-sm: #{$shadow-sm-dark};
-            --shadow-md: #{$shadow-md-dark};
-            --shadow-lg: #{$shadow-lg-dark};
-            --shadow-xl: #{$shadow-xl-dark};
+            --shadow-xs: tokens.$shadow-xs-dark;
+            --shadow-sm: tokens.$shadow-sm-dark;
+            --shadow-md: tokens.$shadow-md-dark;
+            --shadow-lg: tokens.$shadow-lg-dark;
+            --shadow-xl: tokens.$shadow-xl-dark;
 
-            --hover-opacity: #{$opacity-20};
-            --active-opacity: #{$opacity-30};
-            --disabled-opacity: #{$opacity-50};
+            --hover-opacity: tokens.$opacity-20;
+            --active-opacity: tokens.$opacity-30;
+            --disabled-opacity: tokens.$opacity-50;
 
-            --input-bg: #{$gray-10};
-            --input-border: #{$gray-8};
-            --input-text: #{$gray-0};
-            --input-placeholder: #{$gray-6};
+            --input-bg: tokens.$gray-10;
+            --input-border: tokens.$gray-8;
+            --input-text: tokens.$gray-0;
+            --input-placeholder: tokens.$gray-6;
         }
     }
 
@@ -293,8 +294,8 @@
 // ----------------------------------------------------------------------------
     :root:lang(ar),
     [lang="ar"] {
-        --font-base: #{$font-arabic};
-        --font-heading: #{$font-arabic};
+        --font-base: tokens.$font-arabic;
+        --font-heading: tokens.$font-arabic;
         letter-spacing: 0;
     }
 
@@ -304,112 +305,112 @@
 // ----------------------------------------------------------------------------
     :root {
         // Button
-        --btn-h-sm: #{$size-sm};
-        --btn-h-md: #{$size-base};
-        --btn-h-lg: #{$size-md};
-        --btn-px-sm: #{$sp-3};
-        --btn-px-md: #{$sp-4};
-        --btn-px-lg: #{$sp-6};
+        --btn-h-sm: tokens.$size-sm;
+        --btn-h-md: tokens.$size-base;
+        --btn-h-lg: tokens.$size-md;
+        --btn-px-sm: tokens.$sp-3;
+        --btn-px-md: tokens.$sp-4;
+        --btn-px-lg: tokens.$sp-6;
         --btn-radius: var(--radius);
-        --btn-font-sm: #{$fs-sm};
-        --btn-font-md: #{$fs-base};
-        --btn-font-lg: #{$fs-lg};
-        --btn-weight: #{$fw-medium};
+        --btn-font-sm: tokens.$fs-sm;
+        --btn-font-md: tokens.$fs-base;
+        --btn-font-lg: tokens.$fs-lg;
+        --btn-weight: tokens.$fw-medium;
 
         // Input
-        --input-h-sm: #{$size-sm};
-        --input-h-md: #{$size-base};
-        --input-h-lg: #{$size-md};
-        --input-px-sm: #{$sp-3};
-        --input-px-md: #{$sp-4};
-        --input-px-lg: #{$sp-5};
+        --input-h-sm: tokens.$size-sm;
+        --input-h-md: tokens.$size-base;
+        --input-h-lg: tokens.$size-md;
+        --input-px-sm: tokens.$sp-3;
+        --input-px-md: tokens.$sp-4;
+        --input-px-lg: tokens.$sp-5;
         --input-radius: var(--radius);
-        --input-border-width: #{$bw-1};
+        --input-border-width: tokens.$bw-1;
 
         // Card
-        --card-padding: #{$sp-6};
+        --card-padding: tokens.$sp-6;
         --card-radius: calc(var(--radius) * 2);
         --card-shadow: var(--shadow-sm);
 
         // Modal
-        --modal-padding: #{$sp-6};
+        --modal-padding: tokens.$sp-6;
         --modal-radius: calc(var(--radius) * 2);
         --modal-shadow: var(--shadow-xl);
-        --modal-max-w-sm: #{$sp-64};
+        --modal-max-w-sm: tokens.$sp-64;
         --modal-max-w-md: 32rem;
         --modal-max-w-lg: 42rem;
         --modal-max-w-xl: 48rem;
 
         // Dropdown
-        --dropdown-padding: #{$sp-2};
+        --dropdown-padding: tokens.$sp-2;
         --dropdown-radius: var(--radius);
         --dropdown-shadow: var(--shadow-lg);
-        --dropdown-item-h: #{$size-sm};
-        --dropdown-item-px: #{$sp-3};
+        --dropdown-item-h: tokens.$size-sm;
+        --dropdown-item-px: tokens.$sp-3;
 
         // Tooltip
-        --tooltip-padding: #{$sp-2} #{$sp-3};
-        --tooltip-radius: #{$br-sm};
-        --tooltip-font: #{$fs-sm};
+        --tooltip-padding: tokens.$sp-2 tokens.$sp-3;
+        --tooltip-radius: tokens.$br-sm;
+        --tooltip-font: tokens.$fs-sm;
         --tooltip-shadow: var(--shadow-md);
 
         // Badge
-        --badge-h: #{$sp-5};
-        --badge-px: #{$sp-2};
-        --badge-radius: #{$br-full};
-        --badge-font: #{$fs-xs};
-        --badge-weight: #{$fw-medium};
+        --badge-h: tokens.$sp-5;
+        --badge-px: tokens.$sp-2;
+        --badge-radius: tokens.$br-full;
+        --badge-font: tokens.$fs-xs;
+        --badge-weight: tokens.$fw-medium;
 
         // Avatar
-        --avatar-size-xs: #{$size-xs};
-        --avatar-size-sm: #{$size-sm};
-        --avatar-size-md: #{$size-base};
-        --avatar-size-lg: #{$size-lg};
-        --avatar-size-xl: #{$size-xl};
-        --avatar-radius: #{$br-full};
+        --avatar-size-xs: tokens.$size-xs;
+        --avatar-size-sm: tokens.$size-sm;
+        --avatar-size-md: tokens.$size-base;
+        --avatar-size-lg: tokens.$size-lg;
+        --avatar-size-xl: tokens.$size-xl;
+        --avatar-radius: tokens.$br-full;
 
         // Progress
-        --progress-h: #{$sp-2};
-        --progress-radius: #{$br-full};
+        --progress-h: tokens.$sp-2;
+        --progress-radius: tokens.$br-full;
 
         // Switch
-        --switch-w: #{$sp-10};
-        --switch-h: #{$sp-5};
-        --switch-radius: #{$br-full};
-        --switch-thumb-size: #{$sp-4};
+        --switch-w: tokens.$sp-10;
+        --switch-h: tokens.$sp-5;
+        --switch-radius: tokens.$br-full;
+        --switch-thumb-size: tokens.$sp-4;
 
         // Checkbox
-        --checkbox-size: #{$sp-5};
-        --checkbox-radius: #{$br-sm};
-        --checkbox-border-width: #{$bw-2};
+        --checkbox-size: tokens.$sp-5;
+        --checkbox-radius: tokens.$br-sm;
+        --checkbox-border-width: tokens.$bw-2;
 
         // Radio
-        --radio-size: #{$sp-5};
-        --radio-border-width: #{$bw-2};
+        --radio-size: tokens.$sp-5;
+        --radio-border-width: tokens.$bw-2;
 
         // Slider
-        --slider-track-h: #{$sp-1};
-        --slider-thumb-size: #{$sp-5};
-        --slider-radius: #{$br-full};
+        --slider-track-h: tokens.$sp-1;
+        --slider-thumb-size: tokens.$sp-5;
+        --slider-radius: tokens.$br-full;
 
         // Tabs
-        --tabs-h: #{$size-base};
-        --tabs-px: #{$sp-4};
+        --tabs-h: tokens.$size-base;
+        --tabs-px: tokens.$sp-4;
         --tabs-radius: var(--radius);
 
         // Navbar
-        --navbar-h: #{$sp-16};
-        --navbar-px: #{$sp-6};
+        --navbar-h: tokens.$sp-16;
+        --navbar-px: tokens.$sp-6;
 
         // Sidebar
-        --sidebar-w: #{$sp-64};
-        --sidebar-w-collapsed: #{$sp-16};
+        --sidebar-w: tokens.$sp-64;
+        --sidebar-w-collapsed: tokens.$sp-16;
 
         // Container
-        --container-sm: #{$bp-sm};
-        --container-md: #{$bp-md};
-        --container-lg: #{$bp-lg};
-        --container-xl: #{$bp-xl};
-        --container-2xl: #{$bp-2xl};
-        --container-px: #{$sp-4};
+        --container-sm: tokens.$bp-sm;
+        --container-md: tokens.$bp-md;
+        --container-lg: tokens.$bp-lg;
+        --container-xl: tokens.$bp-xl;
+        --container-2xl: tokens.$bp-2xl;
+        --container-px: tokens.$sp-4;
     }

@@ -1,6 +1,6 @@
 {
 	"name"                             : "@mineui/semantics",
-	"version"                          : "0.0.3",
+	"version"                          : "0.0.4",
 	"description"                      : "Semantic variables for theming",
 	"keywords"                         : ["mine", "ui", "semantics"],
 	"license"                          : "MIT",
@@ -30,7 +30,8 @@
 		"./style"                      : "./dist/scss/index.scss"
 	},
 	"scripts": {
-		"build"                        : "bun scripts/copy-scss.js",
+		"build"                        : "sass src/scss/index.scss dist/index.css --style=compressed && bun scripts/copy-scss.js",
+		"build:scss"                   : "bun scripts/copy-scss.js",
 		"lint"                         : "eslint src --ext .ts",
 		"test"                         : "bun test"
 	},
@@ -39,6 +40,9 @@
 	},
 	"peerDependencies": {
 		"bun"                          : "^1.3.3"
+	},
+	"dependencies": {
+		"@mineui/tokens"               : "0.0.9"
 	},
 	"devDependencies": {
 		"@eslint/js"                   : "^9.39.2",

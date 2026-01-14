@@ -6,19 +6,25 @@
 
 
 // ----------------------------------------------------------------------------
+// PACK
+// ----------------------------------------------------------------------------
+    @use '../../node_modules/@mineui/tokens/dist/scss' as tokens;
+
+
+// ----------------------------------------------------------------------------
 // MIXINS
 // ----------------------------------------------------------------------------
     // Theme-aware color
     @mixin theme($property, $light, $dark) {
-        #{$property}: $light;
+        #{$property}: tokens.$light;
 
         [data-theme="dark"] & {
-            #{$property}: $dark;
+            #{$property}: tokens.$dark;
         }
 
         @media (prefers-color-scheme: dark) {
             :root:not([data-theme]) & {
-                #{$property}: $dark;
+                #{$property}: tokens.$dark;
             }
         }
     }
