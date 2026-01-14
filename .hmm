@@ -5,7 +5,7 @@
 	"repo": {
 		"org"           : "mineui",
 		"name"          : "semantics",
-		"version"       : "0.0.4",
+		"version"       : "0.0.5",
 		"desc"          : "Semantic variables for theming",
 		"kw"            : ["mine", "ui", "semantics"],
 		"license"       : "MIT",
