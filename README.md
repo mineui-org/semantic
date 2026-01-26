@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-    <img src="https://img.shields.io/badge/v-0.0.5-black"/>
+    <img src="https://img.shields.io/badge/v-0.0.6-black"/>
     <a href="https://github.com/mineui-org"><img src="https://img.shields.io/badge/🔥-@mineui-black"/></a>
     <br>
     <img src="https://img.shields.io/github/issues/mineui-org/semantic?style=flat" alt="Github Repo Issues" />
@@ -207,6 +207,34 @@
             | `--input-border`      | Gray 3  | Gray 8  | Input border     |
             | `--input-text`        | Gray 11 | Gray 0  | Input text       |
             | `--input-placeholder` | Gray 5  | Gray 6  | Placeholder text |
+
+        - #### Component Tokens
+
+            | Component | Variables | Description |
+            | --------- | --------- | ----------- |
+            | **Button** | `--btn-h-{sm,md,lg}`<br>`--btn-px-{sm,md,lg}`<br>`--btn-radius`<br>`--btn-font-{sm,md,lg}`<br>`--btn-weight` | Button dimensions & typography |
+            | **Input** | `--input-h-{sm,md,lg}`<br>`--input-px-{sm,md,lg}`<br>`--input-radius`<br>`--input-border-width` | Input field dimensions |
+            | **Card** | `--card-padding`<br>`--card-radius`<br>`--card-shadow` | Card component styles |
+            | **Modal** | `--modal-padding`<br>`--modal-radius`<br>`--modal-shadow`<br>`--modal-max-w-{sm,md,lg,xl}` | Modal dialog styles |
+            | **Dropdown** | `--dropdown-padding`<br>`--dropdown-radius`<br>`--dropdown-shadow`<br>`--dropdown-item-h`<br>`--dropdown-item-px` | Dropdown menu styles |
+            | **Tooltip** | `--tooltip-padding`<br>`--tooltip-radius`<br>`--tooltip-font`<br>`--tooltip-shadow` | Tooltip styles |
+            | **Badge** | `--badge-h`<br>`--badge-px`<br>`--badge-radius`<br>`--badge-font`<br>`--badge-weight` | Badge styles |
+            | **Avatar** | `--avatar-size-{xs,sm,md,lg,xl}`<br>`--avatar-radius` | Avatar image styles |
+            | **Progress** | `--progress-h`<br>`--progress-radius` | Progress bar styles |
+            | **Switch** | `--switch-w`<br>`--switch-h`<br>`--switch-radius`<br>`--switch-thumb-size` | Toggle switch styles |
+            | **Checkbox** | `--checkbox-size`<br>`--checkbox-radius`<br>`--checkbox-border-width` | Checkbox styles |
+            | **Radio** | `--radio-size`<br>`--radio-border-width` | Radio button styles |
+            | **Slider** | `--slider-track-h`<br>`--slider-thumb-size`<br>`--slider-radius` | Range slider styles |
+            | **Tabs** | `--tabs-h`<br>`--tabs-px`<br>`--tabs-radius` | Tabs navigation styles |
+            | **Navbar** | `--navbar-h`<br>`--navbar-px` | Navigation bar styles |
+            | **Sidebar** | `--sidebar-w`<br>`--sidebar-w-collapsed` | Sidebar navigation styles |
+            | **Container** | `--container-{sm,md,lg,xl,2xl}`<br>`--container-px` | Layout container max-widths |
+
+        - #### Language Support
+
+            | Language | Attribute | Variables Affected |
+            | -------- | --------- | ------------------ |
+            | **Arabic** | `lang="ar"` | `--font-base`, `--font-heading` (Uses Arabic font), `letter-spacing: 0` |
 
         - #### SCSS Mixins
 

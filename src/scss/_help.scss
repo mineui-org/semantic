@@ -10,10 +10,10 @@
 // ----------------------------------------------------------------------------
     // Get semantic color
     @function color($name) {
-        @return var(--#{token.$name});
+        @return var(--#{$name});
     }
 
     // Get spacing
     @function space($value) {
-        @return calc(var(--unit) * #{token.$value});
+        @return calc(var(--unit) * #{$value});
     }
